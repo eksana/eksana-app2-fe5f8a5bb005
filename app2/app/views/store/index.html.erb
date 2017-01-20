@@ -1,0 +1,43 @@
+<!--<h1>Store#index</h1>
+<p>Find me in app/views/store/index.html.erb</p>-->
+<% if notice %>
+ <% end %>
+
+<h1>Listing Products</h1>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<table>
+  <thead>
+    <tr>
+      <th>Заголовок</th>
+      <th>Описание</th>
+      <th>Картинка</th>
+      <th>Рейтинг</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        
+        
+        <td><%= product.title %></td>
+        <td><%= sanitize(product.description) %></td>
+        <td><%= image_tag(product.image_url) %></td>
+        
+        <td><%= product.rate %>
+        <%=button_to 'Add to cart', line_items_path(product_id:product)%>
+        </td>
+      
+    </tr>
+    <% end %>
+   
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+ 
+        

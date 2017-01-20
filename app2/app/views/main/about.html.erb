@@ -1,0 +1,141 @@
+<h3>Main#about</h3>
+<p>Find me in app/views/main/about.html.erb</p>
+<section class="mixitup_forbuty">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="mixitup_forbuty__title">Наши коллекции</h2>
+        <ul class="ulforbeauty">
+          <li class="filter filter-active" data-filter="all">Все</li>
+          <li class="filter" data-filter=".category-1">Природа</li>
+          <li class="filter" data-filter=".category-2">Растения</li>
+          <li class="filter" data-filter=".category-3">Пейзажи</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="Container">
+    <div class="container clearfix">
+     <div class="row">
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+
+        <div class="mix category-1" data-myorder="1">
+          <!--<a id="single_image" class="fancybox" href="#">
+            <#%= link_to image_tag("railsFoto/nature/pig.jpg", alt:"logotip",class:'padding') %>--->
+           <div class="wrap_formake"   data-title="Show">
+             <!--<img src="images/railsFoto/nature/pig.jpg" alt="The Last of us" class="padding">-->
+             <%= link_to image_tag("railsFoto/nature/dragonflay.jpg", alt:"logotip", class:'padding') %>
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-4">
+
+      <div class="mix category-1" data-myorder="1">
+        <!--<a id="single_image" class="fancybox" href="railsFoto/nature/pig.jpg">-->
+         <div class="wrap_formake"   data-title="Show">
+          <%= link_to image_tag("railsFoto/nature/painted-lady.jpg", alt:"logotip", class:'padding') %>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6  col-md-4">
+
+    <div class="mix category-1" data-myorder="1">
+      <!--<a id="single_image" class="fancybox" href="img/beauty_img1/make_up3.jpg">-->
+       <div class="wrap_formake"   data-title="Show">
+        <%= link_to image_tag("railsFoto/nature/pink-morning-glory.jpg", alt:"logotip", class:'padding') %>
+      </div>
+    </a>
+  </div>
+</div> 
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row">   
+    <div class="col-sm-6 col-xs-12 col-md-4">
+     <div class="mix category-2" data-myorder="2">
+       <!--<a id="single_image" class="fancybox" href="img/beauty_img1/nail1.jpg" alt="GTA V">-->
+
+
+        <div class="wrap_formake"   data-title="Show">
+         <%= link_to image_tag("grass.jpg", alt:"logotip", class:'padding') %>
+       </div>
+     </a></div>
+   </div>
+   <div class="col-xs-12 col-sm-6  col-md-4">
+     <div class="mix category-2" data-myorder="2">
+       <!--<a id="single_image" class="fancybox" href="img/beauty_img1/nail2.jpg" alt="GTA V">-->
+         <div class="wrap_formake"   data-title="Show">
+          <%= link_to image_tag("railsFoto/picture/fruits.jpg", alt:"logotip", class:'padding') %>
+         </div>
+       </a> </div>
+     </div>
+     <div class="col-xs-12 col-sm-6  col-md-4">
+       <div class="mix category-2" data-myorder="2">
+         <!--<a id="single_image" class="fancybox" href="img/beauty_img1/nail3.jpg" alt="GTA V">-->
+
+          <div class="wrap_formake"   data-title="Show">
+           <%= link_to image_tag("railsFoto/picture/hangover.jpg", alt:"logotip", class:'padding') %>
+         </div>
+       </a> 
+     </div>
+   </div>
+ </div>
+
+</div>
+
+
+
+<div class="container">
+  <div class="row"> 
+   <div class="col-sm-6 col-xs-12 col-md-4">
+
+     <div class="mix category-3" data-myorder="3"> 
+       <!--<a id="single_image" class="fancybox" href="img/beauty_img1/hear1.jpg" alt="Mirror Edge" alt="GTA V">-->
+        <div class="wrap_formake"   data-title="Show">
+        <%= link_to image_tag("railsFoto/picture/image.jpg", alt:"logotip", class:'padding') %>
+       </div>
+     </a> 
+   </div>
+ </div>
+ <div class="col-xs-12 col-sm-6  col-md-4">
+   <div class="mix category-3" data-myorder="3">
+     <!--<a id="single_image" class="fancybox" href="img/beauty_img1/hear2.jpg" alt="Mirror Edge" >-->
+       <div class="wrap_formake"   data-title="Show">
+         <%= link_to image_tag("railsFoto/picture/landscape.jpg", alt:"logotip", class:'padding') %>
+       </div>
+     </a>
+   </div>
+ </div>
+ 
+<div class="col-xs-12 col-sm-6  col-md-4">
+ <div class="mix category-3" data-myorder="3">
+  <!-- <a id="single_image" class="fancybox" href="img/beauty_img1/hear3.jpg" alt="Mirror Edge">-->
+     <div class="wrap_formake"   data-title="Show">
+       <%= link_to image_tag("railsFoto/picture/sea.jpg", alt:"logotip", class:'padding') %>
+     </div>
+   </a>
+ </div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12  col-md-12">
+ <div class="container">
+  <div class="row"> 
+ <h2 class="h2_for_mixitup">Перейдите в магазин, чтобы добавить фотографии в коллекцию</h2>
+ <%= link_to "Войти", store_path %>
+ <%= link_to 'Посмотреть отзывы', controller: 'articles' %>
+
+ </div>
+ </div>
+ </div>
+ </div> 
+</div>
+ 
+</section>  
+<!--<button class="link_for_form"></button>-->
